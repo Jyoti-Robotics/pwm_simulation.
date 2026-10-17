@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <conio.h>
+
+void main()
+{
+    int period, dutycycle, i;
+
+    clrscr();
+
+    printf("Enter a period number: ");
+    scanf("%d", &period);
+
+    printf("Enter a duty cycle value: ");
+    scanf("%d", &dutycycle);
+
+    printf("PWM Simulation:\n");
+
+    for(i = 0; i < period; i++)
+    {
+        if(i < dutycycle)
+        {
+            printf("1");
+        }
+        else
+        {
+            printf("0");
+        }
+    }
+
+    getch();
+}
